@@ -22,7 +22,11 @@ eg: If a 'User' entity has a field named 'name', all 'User' entities will have
 Reading files for each user query is less efficient. Therefore, all information is 
 stored in memory. As a functionality improvement, partial value matching also has 
 been added to the application.
-(eg: name=Bob will return all entities that has 'Bob' in the 'name' field)
+(eg: name=Bob will return all entities that has 'Bob' in the 'name' field).
+When searching, application will check whether specified field is available in each entity.
+If field is available, application will compare value of the field with user specified value.
+Application will return all matching entities as search result. Then search result is parsed to
+java objects and shown on stdout.
 
 * Maven has been used to handling dependencies
 * Application will ignore empty lines and lines that contains '//'
