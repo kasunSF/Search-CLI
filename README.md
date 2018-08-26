@@ -1,5 +1,5 @@
 # Search-CLI
-##Task
+## Task
 Using the provided data (tickets.json and users.json and organization.json)
 write a simple command line application to search the data and return the results
  in a human readable format.
@@ -10,14 +10,14 @@ matching is fine (e.g. "mar" won’t return "mary").
 The user should also be able to search for empty values, 
 e.g. where description is empty.
  
-####Assumption
+#### Assumption
 * User will be searching in pre-defined format
 * An entity will always have all set of fields
 
 eg: If a 'User' entity has a field named 'name', all 'User' entities will have 
 'name' field
 
-##Approach
+## Approach
 
 Reading files for each user query is less efficient. Therefore, all information is 
 stored in memory. As a functionality improvement, partial value matching also has 
@@ -29,7 +29,7 @@ been added to the application.
 * Application will terminate upon entering '#' to stdin
 
 
-#####Steps
+##### Steps
 1. Load app configurations via Singleton ConfigManager using 
 `config.properties` file
 2. Read all JSON files and store in memory
@@ -38,7 +38,7 @@ been added to the application.
 5. If there exists a match, add it to search result list
 6. Display search results by entity
 
-###Installation Guide
+### Installation Guide
 
 > Prerequisites: Maven
 - Clone the repository.
@@ -113,7 +113,7 @@ Role : admin
 * Value string is case insensitive
 * Search results will contain all matching values including partial matches
 
-###Configuration definitions (config.properties)
+### Configuration definitions (config.properties)
 >json_dir : Location of JSON files
 
 >file_name_organizations : name of JSON file contains Organizations
@@ -122,7 +122,7 @@ Role : admin
 
 >file_name_users=users.json : name of JSON file contains Users
 
-###Dependencies
+### Dependencies
 
 * JUnit 4.12
 * Mockito 2.21.0
