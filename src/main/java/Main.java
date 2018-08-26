@@ -33,6 +33,7 @@ public class Main {
     }
 
     private static void readInput(InputHandler inputHandler) throws IOException {
+        System.out.println("Please enter search query in filed=value format. To exit, enter '#'");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String input;
 
