@@ -48,6 +48,9 @@ and has correct file name as defined in `config.properties` file.
 `mvn clean compile install`
 - When the command is executing, it will download dependencies, execute all unit
 tests and executable jar fill will be generated in `target` directory.
+- Execute jav by following command.
+
+`$ java -jar target/search-cli-1.0-SNAPSHOT.jar`
 - Executing jar will give following output.
 
 `$ Please enter search query in filed=value format. To exit, enter '#'`
